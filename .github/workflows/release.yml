@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - master
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 jobs:
   page:
     runs-on: ubuntu-latest
