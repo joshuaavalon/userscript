@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/joshuaavalon/userscript#readme",
   "devDependencies": {
-    "@types/greasemonkey": "^4.0.4",
+    "@types/lodash": "^4.14.191",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.27.0",

@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-for js in packages/*/lib/index.js ; do
+for js in packages/*/lib; do
   target=${js#packages/}
-  target=${target/lib\/}
-  target=${target%/*}
-  dist=./public/"$target".js
+  target=${target/lib}
+  dist=./public/"$target"
   echo "Move $js from $dist"
-  cp -- "$js" "$dist"
+  cp -R "$js" "$dist"
 done
